@@ -1,0 +1,100 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 10px;
+}
+
+ul, li, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+header {
+  background-color: blue;
+  position: relative;
+  color: #fff;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+header a.home {
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+header ul a {
+  display: inline-block;
+  color: #fff;
+  padding: 1.5em;
+  transition: all .3s;
+}
+header ul li a:hover {
+  background-color: rgba(0,0,56, .5);
+}
+header .svg-inline--fa {
+  margin-right: .25rem;
+}
+header .toggleHeader {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  display: none;
+  transition: all .5s;
+}
+header .toggleHeader.show .fa-bars {
+  display: inline-block;
+}
+header .toggleHeader.show .fa-times {
+  display: none;
+}
+header .toggleHeader.hide .fa-bars {
+  display: none;
+}
+header .toggleHeader.hide .fa-times {
+  display: inline-block;
+}
+header .toggleHeader.rotate {
+  transform: rotate(360deg);
+}
+
+/*-----------
+------FOOTER-
+-----------*/
+
+footer {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  font-size: 1rem;
+  padding: .2rem;
+}

@@ -1,0 +1,41 @@
+
+@media all and (max-width: 768px) { 
+  body {
+    font-size: 9px;
+  }
+} 
+@media all and (max-width: 575px) { 
+  body {
+    font-size: 8.5px;
+  }
+  header .toggleHeader {
+    display: inline-block;
+  }
+  header ul {
+    position: absolute;
+    top: -500px;
+    transition: top .5s;
+    display: none;
+  }
+  header ul a {
+    display: block;
+  }
+  header a {
+    text-align: center;
+  }
+  header.showBlock ul {
+    top: 0;
+    position: relative;
+    display: block;
+  }
+  header.showBlock {
+    display: block;
+  }
+  header.showBlock a.home {
+    transition: all .3s;
+    display: block;
+  }
+  header.showBlock a.home:hover {
+    background-color: rgba(0,0,56, .5);
+  }
+}

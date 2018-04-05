@@ -1,0 +1,18 @@
+<header>
+  <a href="#" class="toggleHeader show"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a>
+  <a class="home">MyBlog!</a>
+  <nav>
+    <ul>
+      <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="/posts"><i class="fas fa-book"></i> Posts</a></li>
+      <% if (user.isAuthorized) { %>
+        <li><a href="/blog"><i class="fab fa-blogger-b"></i> My Blog</a></li>
+      <% } else { %>
+      <li><a href="/signin"><i class="fas fa-sign-in-alt"></i> Signin</a></li>
+      <li><a href="/signup"><i class="fas fa-user-plus"></i> Signup</a></li> 
+      <% } %>
+    </ul>
+  </nav>
+</header>
+
+<script src="./js/headerToggleVisibility.js" defer></script>
